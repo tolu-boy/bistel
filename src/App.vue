@@ -1,20 +1,28 @@
 <template>
   <div id="app">
-    <Home msg="Welcome to Your Vue.js App"/>
+    <!-- the app header is the navbar link -->
+    <app-header></app-header>
+<router-view></router-view>
 
-    ssss
+
+<!-- the app footer is for all footers -->
+<app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import header from './components/header.vue'
+import footer from './components/footer.vue'
+
 
 
 
 export default {
   name: 'App',
   components: {
-    Home
+    // Home
+    'app-header':header,
+    'app-footer':footer
   }
 }
 </script>
