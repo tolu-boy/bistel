@@ -55,7 +55,7 @@
         <!-- banner part ends -->
         <!-- location match part starts -->
         <div class="location-match text-xs-center">
-            <div class="container"> <span>356 restaurants matched your location: <span class="primary-color">lagos, Nigeria -</span> </span>
+            <div class="container"> <span>35 restaurants matched your location: <span class="primary-color">lagos, Nigeria -</span> </span>
             </div>
         </div>
         <!-- location match part ends -->
@@ -72,8 +72,6 @@
                         <div class="food-item-wrap">
                             <div class="figure-wrap bg-image"  style="background-image: url('../img/food1.jpg');">
                                 <div class="distance"><i class="fa fa-pin"></i>1240m</div>
-                                <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
-                                <div class="review pull-right"><a href="#">198 reviews</a> </div>
                             </div>
                             <div class="content">
                                 <h5><a href="profile.html">The South"s Best Fried Chicken</a></h5>
@@ -95,8 +93,6 @@
                         <div class="food-item-wrap">
                             <div class="figure-wrap bg-image"  style="background-image: url('../img/food2.jpg');">
                                 <div class="distance"><i class="fa fa-pin"></i>1240m</div>
-                                <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
-                                <div class="review pull-right"><a href="#">198 reviews</a> </div>
                             </div>
                             <div class="content">
                                 <h5><a href="profile.html">The South"s Best Fried Chicken</a></h5>
@@ -118,8 +114,6 @@
                         <div class="food-item-wrap">
                             <div class="figure-wrap bg-image"  style="background-image: url('../img/food3.jpg');">
                                 <div class="distance"><i class="fa fa-pin"></i>1240m</div>
-                                <div class="rating pull-left"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
-                                <div class="review pull-right"><a href="#">198 reviews</a> </div>
                             </div>
                             <div class="content">
                                 <h5><a href="profile.html">The South"s Best Fried Chicken</a></h5>
