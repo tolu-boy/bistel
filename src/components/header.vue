@@ -15,7 +15,7 @@
                             <li class="nav-item">  <router-link to="/contact"  class="nav-link active" exact>contact</router-link> </li>
                              <li class="nav-item">  <router-link to="/login"  class="nav-link active" exact>Login</router-link> </li>
 
-                            <li class="nav-item">  <router-link to="/checkout"  class="nav-link active" exact>Checkout</router-link> </li>
+                            <li class="nav-item">  <router-link to="/checkout"  class="nav-link active" exact>  <i class="fa fa-cart-arrow-down"></i>  Checkout</router-link> </li>
 
                         </ul>
                     </div>
