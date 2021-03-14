@@ -2,8 +2,12 @@
   <div id="app">
     <!-- the app header is the navbar link -->
     <app-header></app-header>
-<router-view></router-view>
-
+<transition mode="out-in"
+enter-active-class="animate__animated animate__fadeIn"
+leave-active-class="animate__animated animate__fadeOut"
+>
+  <router-view></router-view>
+</transition>
 
 <!-- the app footer is for all footers -->
 <app-footer></app-footer>
@@ -29,5 +33,6 @@ export default {
 
 <style>
    
+ 
 
 </style>

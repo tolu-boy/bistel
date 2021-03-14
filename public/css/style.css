@@ -1433,7 +1433,7 @@ App section
 ============================*/
 
 footer {
-    background: url(../images/pattern.png)center repeat;
+    background: url(../img/pattern.png)center repeat;
     padding: 90px 0;
     z-index: 1;
     position: relative;
