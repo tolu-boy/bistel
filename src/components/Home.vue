@@ -70,7 +70,7 @@
                     <!-- Each popular food item starts -->
                     <div class="col-xs-12 col-sm-6 col-md-4 food-item">
                         <div class="food-item-wrap">
-                            <div class="figure-wrap bg-image"  style="background-image: url('../img/food1.jpg');">
+                            <div class="figure-wrap bg-image"  data-image-src="../img/food1.jpg"   style="background-image: url('../img/food1.jpg');">
                                 <div class="distance"><i class="fa fa-pin"></i>1240m</div>
                             </div>
                             <div class="content">
@@ -91,7 +91,7 @@
                     <!-- Each popular food item starts -->
                     <div class="col-xs-12 col-sm-6 col-md-4 food-item">
                         <div class="food-item-wrap">
-                            <div class="figure-wrap bg-image"  style="background-image: url('../img/food2.jpg');">
+                            <div class="figure-wrap bg-image" data-image-src="../img/food2.jpg"  style="background-image: url('../img/food2.jpg');">
                                 <div class="distance"><i class="fa fa-pin"></i>1240m</div>
                             </div>
                             <div class="content">
@@ -112,7 +112,7 @@
                     <!-- Each popular food item starts -->
                     <div class="col-xs-12 col-sm-6 col-md-4 food-item">
                         <div class="food-item-wrap">
-                            <div class="figure-wrap bg-image"  style="background-image: url('../img/food3.jpg');">
+                            <div class="figure-wrap bg-image" data-image-src="../img/food3.jpg"  style="background-image: url('../img/food3.jpg');">
                                 <div class="distance"><i class="fa fa-pin"></i>1240m</div>
                             </div>
                             <div class="content">
