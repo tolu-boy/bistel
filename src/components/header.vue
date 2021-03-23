@@ -15,7 +15,10 @@
                             <li class="nav-item">  <router-link to="/contact"  class="nav-link active" exact>contact</router-link> </li>
                              <li class="nav-item">  <router-link to="/login"  class="nav-link active" exact>Login</router-link> </li>
 
-                            <li class="nav-item">  <router-link to="/checkout"  class="nav-link active" exact>  <i class="fa fa-cart-arrow-down"></i>  Checkout</router-link> </li>
+                            <li class="nav-item">  <router-link to="/cart"  class="nav-link active" exact>  
+                            <i class="fa fa-cart-arrow-down"></i>  Cart
+<span class='badge badge-warning' id='lblCartCount'> {{count}}</span>
+                             </router-link> </li>
 
                         </ul>
                     </div>
@@ -29,6 +32,15 @@
 
 <script>
 export default {
+     name: 'Header',
+  
+
+  computed: {
+  count () {
+    return this.$store.state.cartItemCount
+  },
+  
+},
     
 }
 </script>
@@ -42,6 +54,21 @@ export default {
     color: red;
 } */
 
+.badge {
+  
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+
+#lblCartCount {
+    font-size: 12px;
+    background: #ff3300;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+}
 
 
 

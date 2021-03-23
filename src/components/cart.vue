@@ -11,7 +11,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4  col-lg-4 profile-img">
-                                <h1 class="font-white">Check out page</h1> </div>
+                                <h1 class="font-white">Check out page {{count}}</h1> </div>
                         </div>
                     </div>
                 </div>
@@ -22,6 +22,9 @@
                   <ul>
                   
                      <li>Checkout page</li>
+                     <!-- <li v-for="i in doneTodosCount" :key="i.id">{{i.name}}</li>
+                     <li>{{count1}}</li>
+                     <button class="btn-btn-primary" v-on:click="increment"> Add</button> -->
                   </ul>
                </div>
             </div>
@@ -31,7 +34,7 @@
                      <div class="sidebar clearfix m-b-20">
                         <div class="main-block">
                            <div class="sidebar-title white-txt">
-                              <h6>Choose Cusine</h6>
+                              <h6>Coming Soon</h6>
                               <i class="fa fa-cutlery pull-right"></i> 
                            </div>
                            <ul>
@@ -238,7 +241,34 @@
 </template>
 
 <script>
+
 export default {
+   name:'checkout',
+data: function () {
+    return {
+      count: 5,
+      mike:null
+    }
+  },
+
+computed: {
+  doneTodosCount () {
+    return this.$store.getters.doneTodos
+  },
+  count1(){
+    return this.$store.state.count
+  }
+},
+
+methods:{
+   increment(){
+ return this.$store.dispatch('increment')
+
+   }
+},
+
+
+
     
 }
 </script>

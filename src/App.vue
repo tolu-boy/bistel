@@ -27,6 +27,11 @@ export default {
     // Home
     'app-header':header,
     'app-footer':footer
+  },
+  methods:{
+    john(){
+      console.log('hiii');
+    }
   }
 }
 </script>
