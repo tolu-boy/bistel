@@ -17,7 +17,7 @@
 
                             <li class="nav-item">  <router-link to="/cart"  class="nav-link active" exact>  
                             <i class="fa fa-cart-arrow-down"></i>  Cart
-<span class='badge badge-warning' id='lblCartCount'> {{count}}</span>
+<span class='badge badge-warning' id='lblCartCount' v-if="!show"> {{count}}</span>
                              </router-link> </li>
 
                         </ul>
@@ -33,12 +33,19 @@
 <script>
 export default {
      name: 'Header',
-  
+  data(){
+      return{
+    show: this.$store.state.cartItemCount
+      }
+  },
 
   computed: {
   count () {
     return this.$store.state.cartItemCount
+    
   },
+
+  
   
 },
     

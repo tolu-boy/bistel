@@ -10,7 +10,7 @@
     <section
       class="hero bg-image"
       data-image-src="../img/image01.jpg"
-      style="background-image: url('../img/image01.jpg')"
+      style="background-image: url('../img/image01.jpg');"
     >
       <img src="" alt="" />
 
@@ -139,17 +139,18 @@
                 </h5>
                 <div class="product-name">{{ items.desc }}</div>
                 <div class="price-btn-block">
-                  <div class="price-btn-block">
-                    <span class="price">{{ items.price }}</span>
-                    <button
-                      v-on:click="addTocart(items)"
-                      class="btn theme-btn-dash pull-right"
-                      style="float: right"
-                    >
-                      Order Now
-                    </button>
-                  </div>
+
+                  <div class="price-btn-block"> <span class="price">$ 18,49</span> <a href="#" class="btn theme-btn-dash pull-right">Order Now</a> </div>
+                  <span class="price">{{ items.price }}</span>
+
                   <!-- <router-link :to="{ name: 'tolu', params: { userId: items.id,items }}" class="btn theme-btn-dash pull-right"> Order Now</router-link> -->
+<!-- 
+                  <button
+                    v-on:click="addTocart(items)"
+                    class="btn theme-btn-dash pull-right"
+                  >
+                    Order Now
+                  </button> -->
                 </div>
               </div>
               <div class="restaurant-block">
@@ -159,7 +160,7 @@
                     <span>14 adenikan fadeyi </span>
                   </div>
                 </div>
-                <div class="right-like-part pull-right"  style="float: right">
+                <div class="right-like-part pull-right">
                   <i class="fa fa-heart-o"></i> <span>48</span>
                 </div>
               </div>
@@ -603,7 +604,7 @@ export default {
   props: {
     msg: String,
   },
-  data: function () {
+  data: function() {
     return {
       count: 5,
     };
@@ -625,6 +626,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped></style>
 
+
+
+
+
 <!-- 
                   <button
                     v-on:click="addTocart(items)"
@@ -634,4 +639,6 @@ export default {
  
                   </button> -->
 
-<!-- <router-link :to="{ name: 'tolu', params: { userId: items.id,items }}" class="btn theme-btn-dash pull-right"> Order Now</router-link> -->
+
+
+                                    <!-- <router-link :to="{ name: 'tolu', params: { userId: items.id,items }}" class="btn theme-btn-dash pull-right"> Order Now</router-link> -->
