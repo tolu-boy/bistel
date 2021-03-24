@@ -123,7 +123,6 @@
           <!-- Each popular food item starts -->
           <div
             class="col-xs-12 col-sm-6 col-md-4 food-item"
-            
             v-for="items in topRated"
             :key="items.id"
           >
@@ -141,13 +140,15 @@
                 <div class="product-name">{{ items.desc }}</div>
                 <div class="price-btn-block">
                   <span class="price">{{ items.price }}</span>
-                 <router-link :to="{ name: 'foodDetails', params: { id: 123 }}" class="btn theme-btn-dash pull-right"> Order Now</router-link>
 
+                  <!-- <router-link :to="{ name: 'tolu', params: { userId: items.id,items }}" class="btn theme-btn-dash pull-right"> Order Now</router-link> -->
 
-
-                  <!-- <a href="#" class="btn theme-btn-dash pull-right"
-                    >Order Now</a
-                  > -->
+                  <button
+                    v-on:click="addTocart(items)"
+                    class="btn theme-btn-dash pull-right"
+                  >
+                    Order Now
+                  </button>
                 </div>
               </div>
               <div class="restaurant-block">
@@ -601,18 +602,22 @@ export default {
   props: {
     msg: String,
   },
-
+  data: function() {
+    return {
+      count: 5,
+    };
+  },
   computed: {
     topRated() {
       return this.$store.state.topRated;
     },
   },
 
-  methods:{
-      foodDetails(items){
-          this.$router.push({name:'foodDetails', params:items})
-      }
-  }
+  methods: {
+    addTocart(items) {
+      this.$store.dispatch("add", items);
+    },
+  },
 };
 </script>
 

@@ -264,6 +264,14 @@ methods:{
    increment(){
  return this.$store.dispatch('increment')
 
+   },
+
+   addTocart(){
+
+   },
+
+   removeItems(){
+      
    }
 },
 
