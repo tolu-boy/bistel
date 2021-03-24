@@ -617,6 +617,7 @@ export default {
   methods: {
     addTocart(items) {
       this.$store.dispatch("add", items);
+
     },
   },
 };
