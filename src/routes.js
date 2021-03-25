@@ -4,6 +4,7 @@ import login from "@/components/login";
 import cart from "@/components/cart";
 import signup from "@/components/signup";
 import tolu from "@/components/tolu";
+import emptycart from "@/components/emptycart";
 
 
 export default [{
@@ -37,8 +38,14 @@ export default [{
         path: '/tolu/:userId',
         name: 'tolu',
         component: tolu
-    }
+    },
 
+
+
+    {
+        path: "/emptycart",
+        component: emptycart,
+    },
 
 
 

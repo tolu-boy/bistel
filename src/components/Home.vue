@@ -623,16 +623,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+</style>
 
-<!-- 
-                  <button
-                    v-on:click="addTocart(items)"
-                    class="btn theme-btn-dash pull-right"
-                  >
-                    Order Now
- 
-                  </button> -->
-
-<!-- <router-link :to="{ name: 'tolu', params: { userId: items.id,items }}" class="btn theme-btn-dash pull-right"> Order Now</router-link> -->

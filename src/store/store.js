@@ -59,19 +59,22 @@ export const store = new Vuex.Store({
 
         remove(state, payload) {
             if (state.cartItems.length > 0) {
-                let bool = state.cartItems.some((i) => i.id == payload.id);
+                let bool = state.cartItems.some(i => i.id === payload.id);
 
                 if (bool) {
-                    let index = state.cartItems.findIndex((el) => el.id == payload.id);
+                    let index = state.cartItems.findIndex(el => el.id === payload.id);
 
                     if (state.cartItems[index]["quantity"] !== 0) {
                         state.cartItems[index]["quantity"] -= 1;
-
                         state.cartItemCount--;
                     }
+                    if (state.cartItems[index]["quantity"] === 0) {
+                        state.cartItems.splice(index, 1)
+                    }
+
                 }
             }
-        },
+        }
     },
 
     actions: {
