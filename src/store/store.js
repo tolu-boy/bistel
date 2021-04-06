@@ -3,6 +3,9 @@ import Vuex from "vuex";
 import food1 from "@/assets/images/food1.jpg";
 import food2 from "@/assets/images/food2.jpg";
 import food3 from "@/assets/images/food3.jpg";
+import axios from 'axios'
+
+const resource_url = "http://bisteltest.herokuapp.com/api/v1/products";
 
 Vue.use(Vuex);
 
@@ -11,14 +14,14 @@ export const store = new Vuex.Store({
         topRated: [{
                 id: 1,
                 name: 'The South"s Best Fried Chicken',
-                price: 2000,
+                price: 2500,
                 desc: "Fried Chicken with cheese",
                 url: food1,
             },
             {
                 id: 2,
                 name: 'The South"s Best Fried Chicken',
-                price: 2000,
+                price: 3000,
                 desc: "Fried Chicken with cheese",
                 url: food2,
             },
@@ -29,10 +32,34 @@ export const store = new Vuex.Store({
                 desc: "Fried Chicken with cheese",
                 url: food3,
             },
+
+            {
+                id: 4,
+                name: 'The South"s Best Fried Chicken',
+                price: 2000,
+                desc: "Fried Chicken with cheese",
+                url: food2,
+            },
+            {
+                id: 5,
+                name: 'The South"s Best Fried Chicken',
+                price: 2100,
+                desc: "Fried Chicken with cheese",
+                url: food1,
+            },
+            {
+                id: 6,
+                name: 'The South"s Best Fried Chicken',
+                price: 2200,
+                desc: "Fried Chicken with cheese",
+                url: food3,
+            },
         ],
+        topRated1: [],
         count: 14,
         cartItemCount: 0,
         cartItems: [],
+
     },
     getters: {
         doneTodos: (state) => {
@@ -74,7 +101,8 @@ export const store = new Vuex.Store({
 
                 }
             }
-        }
+        },
+        cget: (state, topRated1) => state.topRated1 = topRated1
     },
 
     actions: {
@@ -85,5 +113,16 @@ export const store = new Vuex.Store({
         remove: (context, payload) => {
             context.commit("remove", payload);
         },
+
+
+        async cget({ commit }) {
+            const response = await axios.get(resource_url).catch(error => {
+                console.log(error.response)
+            });
+            commit('cget', response.data.data)
+
+            console.log(response.data.data);
+
+        }
     },
 });

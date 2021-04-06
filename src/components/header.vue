@@ -14,7 +14,7 @@
         <a class="navbar-brand">
           <span style="color: #FF3300; font-family: 'Raleway', sans-serif;"
             >Bistel</span
-          >Foods
+          >Eats
         </a>
         <div
           class="collapse navbar-toggleable-md  float-lg-right"
@@ -27,11 +27,7 @@
               >
             </li>
 
-            <li class="nav-item">
-              <router-link to="#" class="nav-link active" exact
-                >promo</router-link
-              >
-            </li>
+           
             <li class="nav-item">
               <router-link to="/contact" class="nav-link active" exact
                 >contact</router-link
