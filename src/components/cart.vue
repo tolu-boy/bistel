@@ -2,6 +2,7 @@
   <div>
     <div class="page-wrapper">
       <!-- start: Inner page hero -->
+      <br>
       <section
         class="bg-image space-md"
         style="background-image: url('../img/image01.jpg');"
