@@ -52,7 +52,7 @@
                                     <div class="col-sm-4">
                                         <p> Not a members
                                            
-                                        <router-link to="/dashboard" class="primary-color"  exact> Sign up</router-link> 
+                                        <router-link to="/signup" class="primary-color"  exact> Sign up</router-link> 
 
                                         </p>                                           
                                     </div>
