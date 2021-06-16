@@ -11837,10 +11837,6 @@ textarea.c-input {
     opacity: 0.5;
 }
 
-.c-switch.is-disabled.is-active {
-    /* [4] */
-}
-
 .c-switch.is-disabled.is-active::before {
     background-color: #dfe3e9;
 }
@@ -11940,11 +11936,7 @@ textarea.c-input {
     opacity: 0.5;
 }
 
-.c-switch.is-disabled.is-active {
-    /* [4] */
-}
-
-.c-switch.is-disabled.is-active::before {
+*/ .c-switch.is-disabled.is-active::before {
     background-color: #dfe3e9;
 }
 

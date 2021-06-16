@@ -33,13 +33,13 @@
           </li>
 
           <li class="c-sidebar__item">
-            <a class="c-sidebar__link is-active" href="analytics.html">
+            <a class="c-sidebar__link " href="analytics.html">
               <i class="fa fa-clipboard u-mr-xsmall"></i>Order List
             </a>
           </li>
 
           <li class="c-sidebar__item">
-            <a class="c-sidebar__link is-active" href="analytics.html">
+            <a class="c-sidebar__link " href="analytics.html">
               <i class="fa fa-users u-mr-xsmall"></i>General Customers
             </a>
           </li>
