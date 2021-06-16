@@ -5,6 +5,8 @@ import cart from "@/components/cart";
 import signup from "@/components/signup";
 import tolu from "@/components/tolu";
 import emptycart from "@/components/emptycart";
+import dashboard from "@/components/admin/dashboard";
+
 
 
 export default [{
@@ -45,6 +47,12 @@ export default [{
     {
         path: "/emptycart",
         component: emptycart,
+    },
+
+    {
+        path: "/dashboard",
+        component: dashboard,
+        meta: { isAdmin: true }
     },
 
 
