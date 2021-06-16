@@ -34,7 +34,7 @@ export default {
   },
   methods:{
     john(){
-      console.log('hiii');
+      console.log('');
     }
   }
 }
